@@ -317,6 +317,14 @@ std::unique_ptr<RankTableInfo> RankGraphBuilder::GetRankTableInfo()
 {
     return nullptr;
 }
+ 
+
+HcclResult HcclCommDestroyV2(HcclComm comm)
+{
+    return HCCL_SUCCESS;
+}
+
+
 
 s32 HrtGetDevice()
 {
